@@ -1,5 +1,16 @@
 import pytest
+from selenium import webdriver
 
+
+@pytest.fixture()
+
+def Invoke(request):
+    driver = webdriver.Chrome(executable_path="D:\\chromedriver.exe")
+    driver.get("https://rahulshettyacademy.com/angularpractice/")
+    driver.maximize_window()
+    request.cls.driver = driver
+    yield
+    driver.close()
 
 @pytest.fixture()
 def setup():
