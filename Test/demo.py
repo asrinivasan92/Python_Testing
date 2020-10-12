@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-driver = webdriver.Chrome(executable_path="D:\\chromedriver.exe")
+driver = webdriver.Chrome(executable_path="E:\\chromedriver.exe")
 driver.get("https://rahulshettyacademy.com/angularpractice/")
 driver.maximize_window()
 print(driver.current_url)
